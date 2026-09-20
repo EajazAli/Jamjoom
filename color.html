@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Color Management — Jamjoom Printing and Packaging</title>
+<meta name="description" content="ISO 12647-2 standardized color management with GMG Color and X-Rite / Pantone technology.">
+<meta name="theme-color" content="#0a0a0b">
+<meta property="og:title" content="Color Management — Jamjoom Printing and Packaging">
+<meta property="og:description" content="ISO 12647-2 standardized color management with GMG Color and X-Rite / Pantone technology.">
+<meta property="og:type" content="website">
+<link rel="icon" href="assets/images/brand/favicon.ico">
+<link rel="alternate" hreflang="en" href="https://eajazali.github.io/jamjoom-web/color.html">
+<link rel="alternate" hreflang="ar" href="https://eajazali.github.io/jamjoom-web/ar/color.html">
+<link rel="alternate" hreflang="x-default" href="https://eajazali.github.io/jamjoom-web/color.html">
+<meta property="og:locale" content="en_US">
+
+<script>
+/* Language: a saved choice wins; otherwise Arabic browsers get Arabic, everyone else English. */
+(function(){var here='en',file='color.html',want=null;try{want=localStorage.getItem('jpp-lang')}catch(e){}
+if(!want&&here==='en'){var l=(navigator.languages&&navigator.languages[0])||navigator.language||'';if(/^ar\b/i.test(l))want='ar'}
+if(want&&want!==here&&(want==='ar'||want==='en')){location.replace((want==='ar'?'ar/':'../')+file+location.search+location.hash)}})();
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/site.css">
+<script>
+/* Boot flags: first visit of the session gets the full preloader, later pages get the sheet transition. */
+(function(d,w){var r=d.documentElement;if(w.matchMedia&&w.matchMedia('(prefers-reduced-motion: reduce)').matches)return;r.classList.add('js');var s=false;try{s=!!sessionStorage.getItem('jpp-seen')}catch(e){}r.classList.add(s?'is-entering':'is-preloading');setTimeout(function(){if(!w.__jppReady){r.classList.remove('js','is-preloading','is-entering')}},5000)})(document,window);
+</script>
+</head>
+<body data-page="Colours">
+
+<div class="preloader" aria-hidden="true">
+  <div class="preloader__sheet preloader__sheet--c"></div>
+  <div class="preloader__sheet preloader__sheet--m"></div>
+  <div class="preloader__sheet preloader__sheet--y"></div>
+  <div class="preloader__sheet preloader__sheet--k"></div>
+  <div class="preloader__inner">
+    <div class="preloader__top"><span class="mono">Jamjoom Printing &amp; Packaging</span><span class="cmyk" aria-hidden="true"><i></i><i></i><i></i><i></i></span></div>
+    <div class="preloader__mid"><div class="preloader__word"><span>Experts</span><span class="serif">since</span><span>2018</span></div></div>
+    <div class="preloader__bottom"><div class="preloader__bars"><span></span><span></span><span></span><span></span></div><div class="preloader__count">000</div></div>
+  </div>
+</div>
+
+<div class="transition" aria-hidden="true">
+  <div class="transition__sheet transition__sheet--c"></div>
+  <div class="transition__sheet transition__sheet--m"></div>
+  <div class="transition__sheet transition__sheet--y"></div>
+  <div class="transition__sheet transition__sheet--k"><div class="transition__label"><span>Colours</span></div></div>
+</div>
+
+<div class="grain" aria-hidden="true"></div>
+<div class="progress" aria-hidden="true"></div>
+<div class="cursor" aria-hidden="true"><div class="cursor__ring"><span class="cursor__label"></span></div><div class="cursor__dot"></div></div>
+
+<header class="hdr">
+  <a class="brand" href="index.html" aria-label="Jamjoom Printing &amp; Packaging — home">
+    <span class="brand__chip"><img src="assets/images/brand/jpp-logo-transparent.png" alt="JP&amp;P" width="484" height="256"></span>
+    <span class="brand__txt"><b>Jamjoom</b><span>Printing &amp; Packaging</span></span>
+  </a>
+  <div class="hdr__right">
+    <nav class="hdr__nav" aria-label="Primary">
+      <a href="process.html"><span class="roll"><span>Process</span><span aria-hidden="true">Process</span></span></a>
+      <a href="solution.html"><span class="roll"><span>Solutions</span><span aria-hidden="true">Solutions</span></span></a>
+      <a href="color.html" aria-current="page"><span class="roll"><span>Colours</span><span aria-hidden="true">Colours</span></span></a>
+      <a href="about.html"><span class="roll"><span>About</span><span aria-hidden="true">About</span></span></a>
+    </nav>
+    <a class="lang" href="ar/color.html" data-set-lang="ar" data-label="العربية" lang="ar" dir="rtl" hreflang="ar" aria-label="التبديل إلى العربية">العربية</a>
+    <a class="btn btn--sm hdr__contact" href="about.html#contact" data-magnetic=".25"><span>Contact</span><span class="btn__arrow"><svg viewBox="0 0 14 14" aria-hidden="true"><path d="M2 12 12 2M4.5 2H12v7.5" fill="none" stroke="currentColor" stroke-width="1.6"/></svg><svg viewBox="0 0 14 14" aria-hidden="true"><path d="M2 12 12 2M4.5 2H12v7.5" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></span></a>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu" data-magnetic=".25"><span class="roll"><span>Menu</span><span aria-hidden="true">Menu</span></span><span class="menu-btn__ico" aria-hidden="true"></span></button>
+  </div>
+</header>
+
+<div class="menu" id="menu" data-lenis-prevent>
+  <nav class="menu__nav" aria-label="Menu">
+    <a class="menu__link" href="index.html"><i>01</i><b>Home</b><em>Experts since 2018</em></a>
+    <a class="menu__link" href="process.html"><i>02</i><b>Process</b><em>The customer journey</em></a>
+    <a class="menu__link" href="solution.html"><i>03</i><b>Solutions</b><em>Complete packaging</em></a>
+    <a class="menu__link" href="color.html" aria-current="page"><i>04</i><b>Colours</b><em>Colour management</em></a>
+    <a class="menu__link" href="about.html"><i>05</i><b>About</b><em>Company & certificates</em></a>
+    <a class="menu__link" href="about.html#contact"><i>06</i><b>Contact</b><em>Find us at KAEC</em></a>
+  </nav>
+  <div class="menu__aside">
+    <div><span class="mono">Visit</span><p>Building 7100, Unit 05, Industrial Area Phase 01, King Abdullah Economic City (KAEC), Kingdom of Saudi Arabia.</p></div>
+    <div><span class="mono">Seeing is believing</span><p><a class="link-u" href="https://my.matterport.com/show/?m=teHcZv89T2H" target="_blank" rel="noopener">Take the 3D virtual tour <svg width="12" height="12" viewBox="0 0 14 14" aria-hidden="true"><path d="M2 12 12 2M4.5 2H12v7.5" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></a></p></div>
+    <div><span class="mono">KAEC local time</span><p><span data-clock>--:--</span> AST</p></div>
+    <div><a class="lang lang--menu" href="ar/color.html" data-set-lang="ar" data-label="العربية" lang="ar" dir="rtl" hreflang="ar" aria-label="التبديل إلى العربية">العربية</a></div>
+  </div>
+</div>
+
+<main>
+
+<section class="phero">
+  <div class="phero__glow" aria-hidden="true"></div>
+  <div class="wrap">
+    <div class="phero__top" data-reveal data-delay=".5"><div class="phero__crumbs mono"><a href="index.html">Home</a><span>/</span><span>Colours</span></div><span class="cmyk" aria-hidden="true"><i></i><i></i><i></i><i></i></span></div>
+    <h1 class="display phero__title" data-split data-delay=".55">Color <em class="s">management</em></h1>
+    <div class="phero__row">
+      <div data-reveal data-delay=".8"><span class="eyebrow">ISO 12647-2 · GMG Color · X-Rite / Pantone</span></div>
+      <div data-reveal data-delay=".9"><p class="lead">Color is a major element of a product’s packaging — one that is particularly critical because it is vivid, effect loaded and memorable.</p></div>
+    </div>
+    <figure class="media media--21x9 img-reveal phero__media" data-parallax="7"><img src="assets/images/colour-management/monitor-calibration-i1-pro3.jpg" alt="Monitor calibration with the X-Rite i1 Pro 3"></figure>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap cm">
+    <nav class="cm__nav" aria-label="On this page">
+      <a href="#importance" class="is-on"><i>01</i>Color Management &amp; Its Importance</a>
+      <a href="#have"><i>02</i>What we have?</a>
+      <a href="#workflow"><i>03</i>Our work flow</a>
+      <a href="#offer"><i>04</i>What we Offer?</a>
+    </nav>
+    <div>
+      <section class="cm__sec" id="importance">
+        <h2 class="h2" data-split>Color Management &amp; its <em class="s">importance</em></h2>
+        <div class="facts">
+          <div class="fact fact--c" data-reveal><div class="fact__v"><span data-count="80">80</span>%</div><p>Color increases a Brand’s recognition by 80%.</p></div>
+          <div class="fact fact--m" data-reveal><div class="fact__v"><span data-count="25">25</span>%+</div><p>More than 25% of adults say that the color helps in informing them about product quality.</p></div>
+          <div class="fact fact--y" data-reveal><div class="fact__v serif">First</div><p>Color is the very first perception the customer will have of a brand.</p></div>
+          <div class="fact fact--k" data-reveal><div class="fact__v serif">Value</div><p>Packaging is the preferred communication tool to boost a brand’s value.</p></div>
+        </div>
+        <p class="lead" data-reveal>Color reproduction has a fundamental problem: a given “color” doesn’t necessarily produce the same color in all process.</p>
+        <p class="body" data-reveal>Color variation across production is a major challenge for the packaging industry. Only a properly color-managed workflow ensures accurate color throughout design, proofing and printing.</p>
+        <div class="cards cards--2"><div class="plate plate--crop" data-reveal><img src="assets/images/packaging/medicine-boxes.png" alt="Pharmaceutical folding cartons" loading="lazy"></div><div class="plate plate--crop" data-reveal><img src="assets/images/packaging/frozen-food-box.jpg" alt="Frozen food carton, blank and printed" loading="lazy"></div></div>
+      </section>
+
+      <section class="cm__sec" id="have">
+        <h2 class="h2" data-split>What we <em class="s">have</em></h2>
+        <ul class="checks">
+          <li data-reveal>JP&amp;P standardized its pre-press, proof and printing processes as per ISO 12647-2 standards for offset packaging.</li>
+          <li data-reveal>We invested in advanced color management modules from GMG Color (Germany) and X-Rite / Pantone (USA).</li>
+          <li data-reveal>Our QA, prepress and printing departments are trained for continuous monitoring, with standard operating procedures and quality checks.</li>
+          <li data-reveal>All processes are equipped with state of the art software and hardware technologies.</li>
+        </ul>
+        <h3 class="h3" data-split>JP&amp;P Color Management Ecosystem</h3>
+        <div class="cards cards--2">
+          <div data-reveal><article class="card"><div class="plate plate--fit"><img src="assets/images/colour-management/gmg-epson-proofing.png" alt="" loading="lazy"></div><div class="card__head"><h4 class="h4">Epson InkJet Proofer with GMG Color Management Software</h4><span class="mono">01</span></div></article></div>
+          <div data-reveal><article class="card"><div class="plate plate--fit"><img src="assets/images/colour-management/xrite-intellitrax-press-scanning.png" alt="" loading="lazy"></div><div class="card__head"><h4 class="h4">Rutherford X-Rite Automated Color Measurement and color correction system (CIP3 Closed Loop) on Roland Press</h4><span class="mono">02</span></div></article></div>
+          <div data-reveal><article class="card"><div class="plate plate--fit"><img src="assets/images/colour-management/xrite-exact-ink-formulation.png" alt="" loading="lazy"></div><div class="card__head"><h4 class="h4">X-Rite Ink Formulation System with IGT Proofer</h4><span class="mono">03</span></div></article></div>
+          <div data-reveal><article class="card"><div class="plate plate--fit"><img src="assets/images/colour-management/board-calibration-i1io.jpg" alt="" loading="lazy"></div><div class="card__head"><h4 class="h4">JP&amp;P Board Profiler</h4><span class="mono">04</span></div></article></div>
+        </div>
+        <p class="lead" data-reveal>Color affects every workflow, so every workflow needs process standardization and color management.</p>
+        <p class="body" data-reveal>JP&amp;P performs process standardization and calibration of display monitors, proofing printers and offset printing presses to ISO 39 standards, with regular cross-checks and corrective actions. Board profiles are created using the automated X-Rite i1iO Pro 3 spectrophotometer to match color according to board changes. Press standardization and board profiling occur every six months, adjusting for board and chemical changes to ensure consistent color output.</p>
+      </section>
+
+      <section class="cm__sec" id="workflow">
+        <h2 class="h2" data-split>Our work <em class="s">flow</em></h2>
+        <div class="plate plate--crop" data-reveal><img src="assets/images/colour-management/workflow-diagram.jpg" alt="JP&amp;P color managed workflow, from job start to press" loading="lazy"></div>
+      </section>
+
+      <section class="cm__sec" id="offer">
+        <h2 class="h2" data-split>What we <em class="s">offer</em></h2>
+        <ul class="offers">
+          <li class="offer" data-reveal><p>JP&amp;P Standardized Pre-press, Digital Hard Proof, CTP and Press as per ISO 12647-2 workflow which can print ISO 39, Gracol or Customized Standards.</p></li>
+          <li class="offer" data-reveal><p>JP&amp;P bring consistent print results across print runs with X-Rite/Pantone Intellitrax Scanning System and confirm prints are run as per ISO 39 or Gracol Standards.</p></li>
+          <li class="offer" data-reveal><p>Digital hard proofs printed with different paper simulations — folding box board, duplex board, kraft board, grey board — within delta E 3.</p></li>
+          <li class="offer" data-reveal><p>Best achievable quality on different packaging substrates by simulating ISO 39 coated paper results, with every job compared against its digital proof.</p></li>
+          <li class="offer" data-reveal><p>JP&amp;P can print CMYK &amp; Spot Colors within delta E less than 3 and ensure TVI’s &amp; Gray Balance is within strict ISO 12647-2 tolerance.</p></li>
+          <li class="offer" data-reveal><p>X-Rite Ink Formulation Software ensures spot colors are mixed within Delta E 2.</p></li>
+          <li class="offer" data-reveal><p>Global vision inspection technology is used for print and artwork comparison, to verify the integrity of every design element.</p></li>
+          <li class="offer" data-reveal><p>An expert printing team trained to use color management tools for accurate color reproduction.</p></li>
+        </ul>
+        <div class="cards cards--2"><div class="plate plate--crop" data-reveal><img src="assets/images/packaging/milk-cartons.png" alt="Milk cartons in three colour variants" loading="lazy"></div><div class="plate plate--crop" data-reveal><img src="assets/images/packaging/gift-boxes.png" alt="Printed gift boxes" loading="lazy"></div></div>
+      </section>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="ftr">
+  <div class="wrap">
+    <div class="ftr__cta">
+      <span class="eyebrow">Together we reach our goals</span>
+      <h2 class="h1" data-split>Quality packaging begins with a quality <em class="s">relationship.</em></h2>
+      <div class="ftr__go" data-reveal><a class="btn " href="about.html#contact" data-magnetic=".25" ><span>Visit &amp; contact</span><span class="btn__arrow"><svg viewBox="0 0 14 14" aria-hidden="true"><path d="M2 12 12 2M4.5 2H12v7.5" fill="none" stroke="currentColor" stroke-width="1.6"/></svg><svg viewBox="0 0 14 14" aria-hidden="true"><path d="M2 12 12 2M4.5 2H12v7.5" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></span></a></div>
+    </div>
+    <div class="ftr__grid">
+      <div class="ftr__col ftr__col--wide" data-reveal><span class="ftr__logo"><img src="assets/images/brand/jpp-logo-transparent.png" alt="Jamjoom Printing and Packaging" width="484" height="256" loading="lazy"></span></div>
+      <div class="ftr__col" data-reveal><h3>Sitemap</h3><ul><li><a class="link-u" href="index.html">Home</a></li><li><a class="link-u" href="process.html">Process</a></li><li><a class="link-u" href="solution.html">Solutions</a></li><li><a class="link-u" href="color.html">Colours</a></li><li><a class="link-u" href="about.html">About us</a></li></ul></div>
+      <div class="ftr__col" data-reveal><h3>Visit</h3><address>Building 7100 Unit 05, Industrial Area Phase 01, King Abdullah Economic City (KAEC), Zip Code 23989, 3593, Kingdom of Saudi Arabia.</address></div>
+      <div class="ftr__col" data-reveal><h3>Explore</h3><ul><li><a class="link-u" href="https://my.matterport.com/show/?m=teHcZv89T2H" target="_blank" rel="noopener">3D virtual tour</a></li><li><a class="link-u" href="https://www.google.com/maps/search/?api=1&query=Jamjoom+Printing+%26+Packaging+King+Abdullah+Economic+City" target="_blank" rel="noopener">Google Maps</a></li><li><a class="link-u" href="about.html#contact">Contact</a></li></ul></div>
+    </div>
+  </div>
+  <div class="ftr__mark" aria-hidden="true"><span>J</span><span>P</span><span class="amp">&amp;</span><span>P</span></div>
+  <div class="wrap">
+    <div class="ftr__base">
+      <span>© <span>2026</span> Tegan Al Fateh Factory Co. Ltd. — Jamjoom Printing &amp; Packaging</span>
+      <span>KAEC <span data-clock>--:--</span> AST</span>
+      <button type="button" class="link-u" data-top>Back to top ↑</button>
+    </div>
+  </div>
+  <a class="credit" href="https://www.hnhmena.com" target="_blank" rel="noopener" data-cursor="Open" aria-label="Digital experience powered by H&amp;H Technology — opens hnhmena.com">
+    <span class="mono">Digital experience powered by</span>
+    <img src="assets/images/brand/hh-technology-logo-white.png" alt="H&amp;H Technology" width="500" height="178" loading="lazy">
+  </a>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/SplitText.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.3.26/dist/lenis.min.js"></script>
+<script src="assets/js/site.js"></script>
+</body>
+</html>
