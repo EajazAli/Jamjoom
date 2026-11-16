@@ -11,7 +11,7 @@ Drop-in replacement for the `jamjoom-web` GitHub Pages repo.
 - English pages are at the root, Arabic pages in `ar/` (same file names, `lang="ar" dir="rtl"`).
 - First visit: a browser set to Arabic is sent to the Arabic version, everyone else gets English. The header and menu toggle switches language and saves the choice (`localStorage` key `jpp-lang`), and a saved choice always wins over the browser language.
 - Arabic uses IBM Plex Sans Arabic, self-hosted in `assets/fonts/` (SIL Open Font License included).
-- Each page declares its `hreflang` alternates using `https://eajazali.github.io/jamjoom-web/`. If the site moves to a custom domain, search-and-replace that URL in the ten HTML files.
+- Each page declares its canonical URL, `og:url` and `hreflang` alternates on `https://www.jamjoompackaging.com/`. If the domain ever changes, search-and-replace that URL in the ten HTML files and in `sitemap.xml`.
 - To change Arabic wording, edit the text directly in `ar/*.html`.
 
 ## What's inside
