@@ -635,9 +635,11 @@ html.js .hscroll.is-horizontal .hscroll__track { width: max-content; will-change
 .ftr__logo img { height: 56px; width: auto; }
 @media (max-width: 900px) { .ftr__col, .ftr__col--wide { grid-column: span 6; } }
 @media (max-width: 520px) { .ftr__col, .ftr__col--wide { grid-column: 1 / -1; } }
-.ftr__mark { direction: ltr; font-family: var(--latin-sans); font-weight: 600; font-size: clamp(5rem, 27.5vw, 34rem); line-height: .78; letter-spacing: -.07em; text-align: center; white-space: nowrap; padding-top: .06em; margin-bottom: -.04em; overflow: hidden; user-select: none; }
-.ftr__mark span { display: inline-block; }
-.ftr__mark .amp { font-family: var(--latin-serif); font-style: italic; font-weight: 400; letter-spacing: -.04em; color: var(--m); }
+/* Closing brand mark: the real JP&P logo, not a typeset imitation of it.
+   overflow:hidden is the mask the footer reveal slides the logo up through. */
+.ftr__mark { direction: ltr; display: flex; justify-content: center; padding: clamp(28px, 5vw, 64px) 0 clamp(24px, 4vw, 48px); overflow: hidden; user-select: none; }
+.ftr__mark span { display: block; }
+.ftr__mark img { display: block; width: min(72vw, 560px); height: auto; }
 .ftr__base { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px 24px; padding-block: 22px; border-top: 1px solid rgba(10, 10, 11, .16); font-size: 13px; color: rgba(10, 10, 11, .66); }
 .ftr__base a:hover { color: var(--ink); }
 /* Agency credit — dark band so the white H&H mark reads on the paper footer */
