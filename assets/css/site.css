@@ -599,6 +599,12 @@ html.js .hscroll.is-horizontal .hscroll__track { width: max-content; will-change
 .contact__map iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; filter: grayscale(1) invert(.92) contrast(.9) hue-rotate(180deg); transition: filter .8s; }
 .contact__map:hover iframe { filter: none; }
 .addr { font-size: clamp(1.3rem, 2.2vw, 2.3rem); line-height: 1.2; letter-spacing: -.025em; font-weight: 500; font-style: normal; }
+/* Named sales contact in the contact section */
+.person { display: grid; gap: 6px; justify-items: start; padding: clamp(18px, 2vw, 26px); border: 1px solid var(--line); border-radius: var(--radius); }
+.person .mono { color: var(--paper-faint); }
+.person__name { font-size: clamp(1.25rem, 1.8vw, 1.65rem); font-weight: 500; letter-spacing: -.02em; line-height: 1.2; }
+.person__tel { font-size: 16px; margin-top: 4px; }
+.person__tel svg { flex: none; }
 .dl { display: grid; gap: 0; border-top: 1px solid var(--line); }
 .dl div { display: flex; justify-content: space-between; gap: 24px; padding: 14px 0; border-bottom: 1px solid var(--line); font-size: 15px; }
 .dl dt { color: var(--paper-faint); font-family: var(--mono); font-size: 11px; letter-spacing: .12em; text-transform: uppercase; padding-top: 3px; }
